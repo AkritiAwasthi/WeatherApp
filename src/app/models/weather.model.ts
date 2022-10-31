@@ -1,5 +1,6 @@
 export interface WeatherData {
-    cloud_pct: number;
+         name: string;
+        cloud_pct: number;
         temp: number;
         feels_like: number;
         humidity: number;

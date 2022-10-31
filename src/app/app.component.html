@@ -9,7 +9,7 @@
     <img src="../assets/hot.jpg" alt="Image Not Avaialable" *ngIf="weatherData.temp > 15">
     <img src="../assets/cold.jpg" alt="Image Not Avaialable" *ngIf="weatherData.temp <= 15">
     <div class="weather-data">
-      <div class="location">{{ DisplayName | uppercase }}</div>
+      <div class="location">{{ weatherData.name | uppercase }}</div>
       <div class="temperature">{{ weatherData.temp | number: '1.0-0'}}°C</div>
     </div>
   </div>
